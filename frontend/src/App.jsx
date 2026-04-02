@@ -21,7 +21,7 @@ function App() {
     formData.append("jd", jdFile);
 
     try {
-      const res = await fetch("http://127.0.0.1:8000/tailor", {
+      const res = await fetch("https://resume-tailor-production-b39e.up.railway.app/tailor", {
         method: "POST",
         body: formData,
       });
